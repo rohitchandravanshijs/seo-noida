@@ -26,7 +26,7 @@
  .container-seo-india {
      max-width: 1120px;
      margin: 0 auto;
-     padding: 0 20px;
+     padding: 0 0px;
  }
 
  .header-header {
@@ -569,11 +569,11 @@
      }
 
      .container-seo-india {
-         padding: 0 15px;
+         padding: 0 0px;
      }
 
      .section-seo-india {
-         padding: 3rem 15px;
+         padding: 3rem 0px;
      }
 
      .service-card-seo-india {
