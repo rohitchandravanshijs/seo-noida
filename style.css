@@ -1,764 +1,767 @@
  :root {
-            --primary-color: #2563eb;
-            --secondary-color: #1e40af;
-            --accent-color: #ffda00;
-            --text-color: #1f2937;
-            --light-bg: #f3f4f6;
-            --gradient-primary: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
-            --gradient-accent: linear-gradient(135deg, #ffda00 0%, #ffb700 100%);
-            --box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            --transition: all 0.3s ease;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Poppins', sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: #f8fafc;
-        }
-
-        .container-seo-india {
-            max-width: 1120px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        .header-header {
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            color: white;
-            padding: 6rem 0;
-            text-align: left;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 2rem;
-        }
-
-        .header-text {
-            flex: 1;
-            max-width: 600px;
-        }
-
-        .header-buttons {
-            display: flex;
-            gap: 1rem;
-            margin-top: 2rem;
-        }
-
-        .header-buttons .cta-button-seo-india {
-            margin: 0;
-        }
-
-        .header-form {
-            background: rgba(255, 255, 255, 0.95);
-            padding: 1.5rem;
-            border-radius: 15px;
-            width: 400px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 2rem;
-            backdrop-filter: blur(5px);
-            height: fit-content;
-        }
-
-        .form-group {
-            margin-bottom: 1rem;
-            position: relative;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 0.3rem;
-            color: var(--text-color);
-            font-weight: 500;
-            font-size: 0.9rem;
-        }
-
-        .form-group input,
-        .form-group select,
-        .form-group textarea {
-            width: 100%;
-            padding: 0.8rem;
-            border: 1px solid rgba(0,0,0,0.1);
-            border-radius: 8px;
-            font-family: 'Poppins', sans-serif;
-            font-size: 0.95rem;
-            transition: all 0.3s ease;
-            background: rgba(255,255,255,0.9);
-        }
-
-        .form-group textarea {
-            min-height: 80px;
-            resize: vertical;
-        }
-
-        .form-title {
-            text-align: center;
-            margin-bottom: 1.2rem;
-            color: var(--text-color);
-        }
-
-        .form-title h3 {
-            font-size: 1.3rem;
-            margin-bottom: 0.3rem;
-            color: var(--primary-color);
-        }
-
-        .form-title p {
-            font-size: 0.85rem;
-            color: #666;
-        }
-
-        .form-submit {
-            width: 100%;
-            padding: 0.9rem;
-            background: var(--gradient-primary);
-            color: white;
-            border: none;
-            border-radius: 8px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            font-size: 0.95rem;
-            margin-top: 0.5rem;
-        }
-
-        .form-success {
-            display: none;
-            text-align: center;
-            color: #10b981;
-            font-weight: 600;
-            margin-top: 1rem;
-            padding: 0.8rem;
-            background: rgba(16, 185, 129, 0.1);
-            border-radius: 8px;
-            animation: fadeIn 0.3s ease;
-            font-size: 0.9rem;
-        }
-
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 1.5rem;
-            font-weight: 700;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-            animation: fadeInDown 1s ease;
-         line-height: 1.4;
-        }
-
-        h2 {
-            font-size: 2.2rem;
-            margin: 2.5rem 0 1.5rem;
-            color: var(--primary-color);
-            position: relative;
-            display: inline-block;
-         line-height: 1.4;
-        }
-
-        h2 i {
-            margin-right: 10px;
-            color: var(--primary-color);
-        }
-
-        h2::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 0;
-            width: 60px;
-            height: 3px;
-            background: var(--gradient-accent);
-            border-radius: 3px;
-        }
-
-        h3 {
-            font-size: 1.5rem;
-            margin: 1.5rem 0 1rem;
-            color: var(--text-color);
-         line-height: 1.4;
-        }
-
-        p {
-            margin-bottom: 1.2rem;
-            font-size: 1.1rem;
-            line-height: 1.8;
-        }
-
-        .section-seo-india {
-            padding: 4rem 20px;
-            position: relative;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-
-        }
-
-        .section-seo-india:nth-child(even) {
-            background-color: var(--light-bg);
-        }
-
-        .section-seo-india::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path fill="%23f3f4f6" d="M0,0 L100,0 L100,100 L0,100 Z"/></svg>');
-            opacity: 0.1;
-            z-index: -1;
-        }
-
-        .services-grid-seo-india {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            margin: 3rem 0;
-            position: relative;
-            z-index: 1;
-        }
-
-        .service-card-seo-india {
-            background: white;
-            padding: 2rem;
-            border-radius: 15px;
-            box-shadow: var(--box-shadow);
-            text-align: center;
-            transition: var(--transition);
-            position: relative;
-            overflow: hidden;
-            border: 1px solid rgba(0,0,0,0.05);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .service-card-seo-india::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 5px;
-            background: var(--gradient-primary);
-        }
-
-        .service-card-seo-india:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
-        }
-
-        .service-card-seo-india .card-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-bottom: 1rem;
-        }
-
-        .service-card-seo-india .card-description {
-            margin-top: 1rem;
-        }
-
-        .service-icon-seo-india {
-            font-size: 3rem;
-            color: var(--primary-color);
-            margin-bottom: 1.5rem;
-            transition: var(--transition);
-        }
-
-        .service-card-seo-india:hover .service-icon-seo-india {
-            transform: scale(1.1);
-            color: var(--secondary-color);
-        }
-
-        .cta-button-seo-india {
-            display: inline-block;
-            background: var(--gradient-primary);
-            color: white;
-            padding: 1.2rem 2.5rem;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
-            margin: 2rem auto;
-            transition: var(--transition);
-            box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            border: none;
-            cursor: pointer;
-        }
-
-        .cta-button-seo-india:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(37, 99, 235, 0.4);
-        }
-
-        .faq-item-seo-india {
-            margin-bottom: 1.5rem;
-            padding: 1.5rem;
-            background: white;
-            border-radius: 15px;
-            box-shadow: var(--box-shadow);
-            transition: var(--transition);
-            border: 1px solid rgba(0,0,0,0.05);
-        }
-
-        .faq-item-seo-india:hover {
-            transform: translateX(5px);
-        }
-
-        .faq-question-seo-india {
-            font-weight: 600;
-            color: var(--primary-color);
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            font-size: 1.1rem;
-        }
-
-        .stats-section-seo-india {
-            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            color: white;
-            padding: 5rem 0;
-            text-align: center;
-            position: relative;
-        }
-
-        .stats-grid-seo-india {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .stat-item-seo-india {
-            padding: 2rem;
-            background: rgba(255,255,255,0.1);
-            border-radius: 15px;
-            backdrop-filter: blur(5px);
-            transition: var(--transition);
-        }
-
-        .stat-item-seo-india:hover {
-            transform: scale(1.05);
-            background: rgba(255,255,255,0.15);
-        }
-
-        .stat-number-seo-india {
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            background: var(--gradient-accent);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .industries-grid-seo-india {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
-            margin: 3rem 0;
-        }
-
-        .industry-item-seo-india {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 15px;
-            text-align: center;
-            box-shadow: var(--box-shadow);
-            transition: var(--transition);
-            border: 1px solid rgba(0,0,0,0.05);
-        }
-
-        .industry-item-seo-india:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-        }
-
-        .industry-item-seo-india i {
-            font-size: 2.5rem;
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-            transition: var(--transition);
-        }
-
-        .industry-item-seo-india:hover i {
-            transform: scale(1.1);
-            color: var(--secondary-color);
-        }
-
-        .process-steps-seo-india {
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-            margin: 3rem 0;
-            position: relative;
-        }
-
-        .process-steps-seo-india::before {
-            content: '';
-            position: absolute;
-            left: 20px;
-            top: 0;
-            bottom: 0;
-            width: 2px;
-            background: var(--gradient-primary);
-            z-index: 0;
-        }
-
-        .process-step-seo-india {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            padding: 1.5rem;
-            background: white;
-            border-radius: 15px;
-            box-shadow: var(--box-shadow);
-            position: relative;
-            z-index: 1;
-            transition: var(--transition);
-            border: 1px solid rgba(0,0,0,0.05);
-            cursor: pointer;
-            flex-direction: column;
-        }
-
-        .process-step-header {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            width: 100%;
-        }
-
-        .process-step-seo-india .arrow-down {
-            margin-left: auto;
-            transition: var(--transition);
-        }
-
-        .process-step-seo-india.active .arrow-down {
-            transform: rotate(180deg);
-        }
-
-        .process-content-seo-india {
-            display: none;
-            padding: 1.5rem;
-            background: var(--light-bg);
-            border-radius: 10px;
-            margin-top: 1rem;
-            transition: var(--transition);
-            width: 100%;
-        }
-
-        .process-content-seo-india.active {
-            display: block;
-            animation: fadeIn 0.3s ease;
-        }
-
-        .process-content-seo-india ul {
-            list-style-type: none;
-            padding-left: 1rem;
-        }
-
-        .process-content-seo-india li {
-            margin-bottom: 0.8rem;
-            position: relative;
-            padding-left: 1.5rem;
-        }
-
-        .process-content-seo-india li::before {
-            content: '✓';
-            position: absolute;
-            left: 0;
-            color: var(--primary-color);
-            font-weight: bold;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(-10px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .section-title-custom-color-seo-india {
-            color: var(--accent-color);
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-        }
-
-        footer {
-            background: var(--gradient-primary);
-            color: white;
-            padding: 2rem 0;
-            text-align: center;
-        }
-
-        @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2.2rem;
-            }
-
-            h2 {
-                font-size: 1.8rem;
-            }
-
-            .services-grid-seo-india, .industries-grid-seo-india {
-                grid-template-columns: 1fr;
-            }
-
-            .process-steps-seo-india::before {
-                left: 30px;
-            }
-
-            /* New mobile-specific styles */
-            header {
-                padding: 4rem 0;
-            }
-
-            .container-seo-india {
-                padding: 0 15px;
-            }
-
-            .section-seo-india {
-                padding: 3rem 15px;
-            }
-
-            .service-card-seo-india {
-                padding: 1.5rem;
-            }
-
-            .service-icon-seo-india {
-                font-size: 2.5rem;
-            }
-
-            .cta-button-seo-india {
-                padding: 1rem 2rem;
-                font-size: 0.9rem;
-                width: 100%;
-                text-align: center;
-            }
-
-            .stats-grid-seo-india {
-                grid-template-columns: 1fr;
-                gap: 1.5rem;
-            }
-
-            .stat-item-seo-india {
-                padding: 1.5rem;
-            }
-
-            .stat-number-seo-india {
-                font-size: 2.5rem;
-            }
-
-            .faq-item-seo-india {
-                padding: 1.2rem;
-            }
-
-            .process-step-seo-india {
-                padding: 1.2rem;
-            }
-
-            .process-content-seo-india {
-                padding: 1.2rem;
-            }
-
-            .industries-grid-seo-india {
-                gap: 1rem;
-            }
-
-            .industry-item-seo-india {
-                padding: 1.2rem;
-            }
-
-            .industry-item-seo-india i {
-                font-size: 2rem;
-            }
-
-            .header-content {
-                flex-direction: column;
-            }
-
-            .header-form {
-                width: 100%;
-                position: relative;
-                top: 0;
-            }
-
-            .header-buttons {
-                flex-direction: column;
-            }
-
-            .form-group input,
-            .form-group select,
-            .form-group textarea {
-                padding: 0.7rem;
-            }
-
-            .form-submit {
-                padding: 0.8rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 1.8rem;
-            }
-
-            h2 {
-                font-size: 1.5rem;
-            }
-
-            h3 {
-                font-size: 1.2rem;
-            }
-
-            p {
-                font-size: 1rem;
-            }
-
-            .service-card-seo-india {
-                padding: 1.2rem;
-            }
-
-            .service-icon-seo-india {
-                font-size: 2rem;
-            }
-
-            .stat-number-seo-india {
-                font-size: 2rem;
-            }
-
-            .process-step-seo-india {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .process-step-seo-india i {
-                margin-bottom: 0.5rem;
-            }
-
-            .process-step-seo-india .arrow-down {
-                margin: 0.5rem auto 0;
-            }
-        }
-
-        .blog-section-seo-india {
-            padding: 4rem 20px;
-            background: var(--light-bg);
-        }
-
-        .blog-grid-seo-india {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .blog-card-seo-india {
-            background: white;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: var(--box-shadow);
-            transition: var(--transition);
-        }
-
-        .blog-card-seo-india:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-        }
-
-        .blog-image-seo-india {
-            height: 200px;
-            background-size: cover;
-            background-position: center;
-        }
-
-        .blog-content-seo-india {
-            padding: 1.5rem;
-        }
-
-        .blog-date-seo-india {
-            color: var(--primary-color);
-            font-size: 0.9rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .blog-title-seo-india {
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
-            color: var(--text-color);
-        }
-
-        .blog-excerpt-seo-india {
-            color: #666;
-            font-size: 0.95rem;
-            margin-bottom: 1.5rem;
-            line-height: 1.6;
-        }
-
-        .read-more-seo-india {
-            color: var(--primary-color);
-            text-decoration: none;
-            font-weight: 600;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .read-more-seo-india:hover {
-            color: var(--secondary-color);
-        }
-
-        .read-more-seo-india i {
-            transition: transform 0.3s ease;
-        }
-
-        .read-more-seo-india:hover i {
-            transform: translateX(5px);
-        }
-
-        @media (max-width: 768px) {
-            .blog-section-seo-india {
-                padding: 3rem 15px;
-            }
-
-            .blog-grid-seo-india {
-                grid-template-columns: 1fr;
-            }
-
-            .blog-image-seo-india {
-                height: 180px;
-            }
-        }
+     --primary-color: #2563eb;
+     --secondary-color: #1e40af;
+     --accent-color: #ffda00;
+     --text-color: #1f2937;
+     --light-bg: #f3f4f6;
+     --gradient-primary: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+     --gradient-accent: linear-gradient(135deg, #ffda00 0%, #ffb700 100%);
+     --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+     --transition: all 0.3s ease;
+ }
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     font-family: 'Poppins', sans-serif;
+     line-height: 1.6;
+     color: var(--text-color);
+     background-color: #f8fafc;
+ }
+
+ .container-seo-india {
+     max-width: 1120px;
+     margin: 0 auto;
+     padding: 0 20px;
+ }
+
+ .header-header {
+     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unshttps://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJjUSBu0PQJgcKDvcTU_oTfpY5RvDVQYK6OO8REUoyh8DsmzrSGOK8wyh8tEgxIpI7gMEsu1HN-VWpVvMZJ4H-FY5WmQqS_vzTi-R86ZVVrCt1hRcUh63JF69n8vKx4RMXIlI5FipzInL6gFAGU2qNgF0AcTIXtI-jGdC7OS0OOApHVIWgUwxKy5q46PIU/s320/colleagues-working-project-discussing-details.jpg');
+     background-size: cover;
+     background-position: center;
+     background-attachment: fixed;
+     color: white;
+     padding: 6rem 0;
+     text-align: left;
+     position: relative;
+     overflow: hidden;
+ }
+
+ .header-content {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 2rem;
+ }
+
+ .header-text {
+     flex: 1;
+     max-width: 600px;
+ }
+
+ .header-buttons {
+     display: flex;
+     gap: 1rem;
+     margin-top: 2rem;
+ }
+
+ .header-buttons .cta-button-seo-india {
+     margin: 0;
+ }
+
+ .header-form {
+     background: rgba(255, 255, 255, 0.95);
+     padding: 1.5rem;
+     border-radius: 15px;
+     width: 400px;
+     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+     position: sticky;
+     top: 2rem;
+     backdrop-filter: blur(5px);
+     height: fit-content;
+ }
+
+ .form-group {
+     margin-bottom: 1rem;
+     position: relative;
+ }
+
+ .form-group label {
+     display: block;
+     margin-bottom: 0.3rem;
+     color: var(--text-color);
+     font-weight: 500;
+     font-size: 0.9rem;
+ }
+
+ .form-group input,
+ .form-group select,
+ .form-group textarea {
+     width: 100%;
+     padding: 0.8rem;
+     border: 1px solid rgba(0, 0, 0, 0.1);
+     border-radius: 8px;
+     font-family: 'Poppins', sans-serif;
+     font-size: 0.95rem;
+     transition: all 0.3s ease;
+     background: rgba(255, 255, 255, 0.9);
+ }
+
+ .form-group textarea {
+     min-height: 80px;
+     resize: vertical;
+ }
+
+ .form-title {
+     text-align: center;
+     margin-bottom: 1.2rem;
+     color: var(--text-color);
+ }
+
+ .form-title h3 {
+     font-size: 1.3rem;
+     margin-bottom: 0.3rem;
+     color: var(--primary-color);
+ }
+
+ .form-title p {
+     font-size: 0.85rem;
+     color: #666;
+ }
+
+ .form-submit {
+     width: 100%;
+     padding: 0.9rem;
+     background: var(--gradient-primary);
+     color: white;
+     border: none;
+     border-radius: 8px;
+     font-weight: 600;
+     cursor: pointer;
+     transition: all 0.3s ease;
+     text-transform: uppercase;
+     letter-spacing: 1px;
+     font-size: 0.95rem;
+     margin-top: 0.5rem;
+ }
+
+ .form-success {
+     display: none;
+     text-align: center;
+     color: #10b981;
+     font-weight: 600;
+     margin-top: 1rem;
+     padding: 0.8rem;
+     background: rgba(16, 185, 129, 0.1);
+     border-radius: 8px;
+     animation: fadeIn 0.3s ease;
+     font-size: 0.9rem;
+ }
+
+ h1 {
+     font-size: 3rem;
+     margin-bottom: 1.5rem;
+     font-weight: 700;
+     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+     animation: fadeInDown 1s ease;
+     line-height: 1.4;
+ }
+
+ h2 {
+     font-size: 2.2rem;
+     margin: 2.5rem 0 1.5rem;
+     color: var(--primary-color);
+     position: relative;
+     display: inline-block;
+     line-height: 1.4;
+ }
+
+ h2 i {
+     margin-right: 10px;
+     color: var(--primary-color);
+ }
+
+ h2::after {
+     content: '';
+     position: absolute;
+     bottom: -10px;
+     left: 0;
+     width: 60px;
+     height: 3px;
+     background: var(--gradient-accent);
+     border-radius: 3px;
+ }
+
+ h3 {
+     font-size: 1.5rem;
+     margin: 1.5rem 0 1rem;
+     color: var(--text-color);
+     line-height: 1.4;
+ }
+
+ p {
+     margin-bottom: 1.2rem;
+     font-size: 1.1rem;
+     line-height: 1.8;
+ }
+
+ .section-seo-india {
+     padding: 4rem 20px;
+     position: relative;
+     overflow: hidden;
+     display: flex;
+     flex-direction: column;
+
+ }
+
+ .section-seo-india:nth-child(even) {
+     background-color: var(--light-bg);
+ }
+
+ .section-seo-india::before {
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path fill="%23f3f4f6" d="M0,0 L100,0 L100,100 L0,100 Z"/></svg>');
+     opacity: 0.1;
+     z-index: -1;
+ }
+
+ .services-grid-seo-india {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+     gap: 2rem;
+     margin: 3rem 0;
+     position: relative;
+     z-index: 1;
+ }
+
+ .service-card-seo-india {
+     background: white;
+     padding: 2rem;
+     border-radius: 15px;
+     box-shadow: var(--box-shadow);
+     text-align: center;
+     transition: var(--transition);
+     position: relative;
+     overflow: hidden;
+     border: 1px solid rgba(0, 0, 0, 0.05);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
+ .service-card-seo-india::before {
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 5px;
+     background: var(--gradient-primary);
+ }
+
+ .service-card-seo-india:hover {
+     transform: translateY(-10px);
+     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+ }
+
+ .service-card-seo-india .card-content {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-bottom: 1rem;
+ }
+
+ .service-card-seo-india .card-description {
+     margin-top: 1rem;
+ }
+
+ .service-icon-seo-india {
+     font-size: 3rem;
+     color: var(--primary-color);
+     margin-bottom: 1.5rem;
+     transition: var(--transition);
+ }
+
+ .service-card-seo-india:hover .service-icon-seo-india {
+     transform: scale(1.1);
+     color: var(--secondary-color);
+ }
+
+ .cta-button-seo-india {
+     display: inline-block;
+     background: var(--gradient-primary);
+     color: white;
+     padding: 1.2rem 2.5rem;
+     border-radius: 50px;
+     text-decoration: none;
+     font-weight: 600;
+     margin: 2rem auto;
+     transition: var(--transition);
+     box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
+     text-transform: uppercase;
+     letter-spacing: 1px;
+     border: none;
+     cursor: pointer;
+ }
+
+ .cta-button-seo-india:hover {
+     transform: translateY(-3px);
+     box-shadow: 0 8px 20px rgba(37, 99, 235, 0.4);
+ }
+
+ .faq-item-seo-india {
+     margin-bottom: 1.5rem;
+     padding: 1.5rem;
+     background: white;
+     border-radius: 15px;
+     box-shadow: var(--box-shadow);
+     transition: var(--transition);
+     border: 1px solid rgba(0, 0, 0, 0.05);
+ }
+
+ .faq-item-seo-india:hover {
+     transform: translateX(5px);
+ }
+
+ .faq-question-seo-india {
+     font-weight: 600;
+     color: var(--primary-color);
+     display: flex;
+     align-items: center;
+     gap: 1rem;
+     font-size: 1.1rem;
+ }
+
+ .stats-section-seo-india {
+     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+     background-size: cover;
+     background-position: center;
+     background-attachment: fixed;
+     color: white;
+     padding: 5rem 0;
+     text-align: center;
+     position: relative;
+ }
+
+ .stats-grid-seo-india {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+     gap: 2rem;
+     margin-top: 3rem;
+ }
+
+ .stat-item-seo-india {
+     padding: 2rem;
+     background: rgba(255, 255, 255, 0.1);
+     border-radius: 15px;
+     backdrop-filter: blur(5px);
+     transition: var(--transition);
+ }
+
+ .stat-item-seo-india:hover {
+     transform: scale(1.05);
+     background: rgba(255, 255, 255, 0.15);
+ }
+
+ .stat-number-seo-india {
+     font-size: 3rem;
+     font-weight: 700;
+     margin-bottom: 1rem;
+     background: var(--gradient-accent);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+ }
+
+ .industries-grid-seo-india {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+     gap: 1.5rem;
+     margin: 3rem 0;
+ }
+
+ .industry-item-seo-india {
+     background: white;
+     padding: 1.5rem;
+     border-radius: 15px;
+     text-align: center;
+     box-shadow: var(--box-shadow);
+     transition: var(--transition);
+     border: 1px solid rgba(0, 0, 0, 0.05);
+ }
+
+ .industry-item-seo-india:hover {
+     transform: translateY(-5px);
+     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+ }
+
+ .industry-item-seo-india i {
+     font-size: 2.5rem;
+     color: var(--primary-color);
+     margin-bottom: 1rem;
+     transition: var(--transition);
+ }
+
+ .industry-item-seo-india:hover i {
+     transform: scale(1.1);
+     color: var(--secondary-color);
+ }
+
+ .process-steps-seo-india {
+     display: flex;
+     flex-direction: column;
+     gap: 2rem;
+     margin: 3rem 0;
+     position: relative;
+ }
+
+ .process-steps-seo-india::before {
+     content: '';
+     position: absolute;
+     left: 20px;
+     top: 0;
+     bottom: 0;
+     width: 2px;
+     background: var(--gradient-primary);
+     z-index: 0;
+ }
+
+ .process-step-seo-india {
+     display: flex;
+     align-items: center;
+     gap: 1rem;
+     padding: 1.5rem;
+     background: white;
+     border-radius: 15px;
+     box-shadow: var(--box-shadow);
+     position: relative;
+     z-index: 1;
+     transition: var(--transition);
+     border: 1px solid rgba(0, 0, 0, 0.05);
+     cursor: pointer;
+     flex-direction: column;
+ }
+
+ .process-step-header {
+     display: flex;
+     align-items: center;
+     gap: 1rem;
+     width: 100%;
+ }
+
+ .process-step-seo-india .arrow-down {
+     margin-left: auto;
+     transition: var(--transition);
+ }
+
+ .process-step-seo-india.active .arrow-down {
+     transform: rotate(180deg);
+ }
+
+ .process-content-seo-india {
+     display: none;
+     padding: 1.5rem;
+     background: var(--light-bg);
+     border-radius: 10px;
+     margin-top: 1rem;
+     transition: var(--transition);
+     width: 100%;
+ }
+
+ .process-content-seo-india.active {
+     display: block;
+     animation: fadeIn 0.3s ease;
+ }
+
+ .process-content-seo-india ul {
+     list-style-type: none;
+     padding-left: 1rem;
+ }
+
+ .process-content-seo-india li {
+     margin-bottom: 0.8rem;
+     position: relative;
+     padding-left: 1.5rem;
+ }
+
+ .process-content-seo-india li::before {
+     content: '✓';
+     position: absolute;
+     left: 0;
+     color: var(--primary-color);
+     font-weight: bold;
+ }
+
+ @keyframes fadeIn {
+     from {
+         opacity: 0;
+         transform: translateY(-10px);
+     }
+
+     to {
+         opacity: 1;
+         transform: translateY(0);
+     }
+ }
+
+ .section-title-custom-color-seo-india {
+     color: var(--accent-color);
+     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+ }
+
+ footer {
+     background: var(--gradient-primary);
+     color: white;
+     padding: 2rem 0;
+     text-align: center;
+ }
+
+ @keyframes fadeInDown {
+     from {
+         opacity: 0;
+         transform: translateY(-20px);
+     }
+
+     to {
+         opacity: 1;
+         transform: translateY(0);
+     }
+ }
+
+ @media (max-width: 768px) {
+     h1 {
+         font-size: 2.2rem;
+     }
+
+     h2 {
+         font-size: 1.8rem;
+     }
+
+     .services-grid-seo-india,
+     .industries-grid-seo-india {
+         grid-template-columns: 1fr;
+     }
+
+     .process-steps-seo-india::before {
+         left: 30px;
+     }
+
+     /* New mobile-specific styles */
+     header {
+         padding: 4rem 0;
+     }
+
+     .container-seo-india {
+         padding: 0 15px;
+     }
+
+     .section-seo-india {
+         padding: 3rem 15px;
+     }
+
+     .service-card-seo-india {
+         padding: 1.5rem;
+     }
+
+     .service-icon-seo-india {
+         font-size: 2.5rem;
+     }
+
+     .cta-button-seo-india {
+         padding: 1rem 2rem;
+         font-size: 0.9rem;
+         width: 100%;
+         text-align: center;
+     }
+
+     .stats-grid-seo-india {
+         grid-template-columns: 1fr;
+         gap: 1.5rem;
+     }
+
+     .stat-item-seo-india {
+         padding: 1.5rem;
+     }
+
+     .stat-number-seo-india {
+         font-size: 2.5rem;
+     }
+
+     .faq-item-seo-india {
+         padding: 1.2rem;
+     }
+
+     .process-step-seo-india {
+         padding: 1.2rem;
+     }
+
+     .process-content-seo-india {
+         padding: 1.2rem;
+     }
+
+     .industries-grid-seo-india {
+         gap: 1rem;
+     }
+
+     .industry-item-seo-india {
+         padding: 1.2rem;
+     }
+
+     .industry-item-seo-india i {
+         font-size: 2rem;
+     }
+
+     .header-content {
+         flex-direction: column;
+     }
+
+     .header-form {
+         width: 100%;
+         position: relative;
+         top: 0;
+     }
+
+     .header-buttons {
+         flex-direction: column;
+     }
+
+     .form-group input,
+     .form-group select,
+     .form-group textarea {
+         padding: 0.7rem;
+     }
+
+     .form-submit {
+         padding: 0.8rem;
+     }
+ }
+
+ @media (max-width: 480px) {
+     h1 {
+         font-size: 1.8rem;
+     }
+
+     h2 {
+         font-size: 1.5rem;
+     }
+
+     h3 {
+         font-size: 1.2rem;
+     }
+
+     p {
+         font-size: 1rem;
+     }
+
+     .service-card-seo-india {
+         padding: 1.2rem;
+     }
+
+     .service-icon-seo-india {
+         font-size: 2rem;
+     }
+
+     .stat-number-seo-india {
+         font-size: 2rem;
+     }
+
+     .process-step-seo-india {
+         flex-direction: column;
+         text-align: center;
+     }
+
+     .process-step-seo-india i {
+         margin-bottom: 0.5rem;
+     }
+
+     .process-step-seo-india .arrow-down {
+         margin: 0.5rem auto 0;
+     }
+ }
+
+ .blog-section-seo-india {
+     padding: 4rem 20px;
+     background: var(--light-bg);
+ }
+
+ .blog-grid-seo-india {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+     gap: 2rem;
+     margin-top: 2rem;
+ }
+
+ .blog-card-seo-india {
+     background: white;
+     border-radius: 15px;
+     overflow: hidden;
+     box-shadow: var(--box-shadow);
+     transition: var(--transition);
+ }
+
+ .blog-card-seo-india:hover {
+     transform: translateY(-5px);
+     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+ }
+
+ .blog-image-seo-india {
+     height: 200px;
+     background-size: cover;
+     background-position: center;
+ }
+
+ .blog-content-seo-india {
+     padding: 1.5rem;
+ }
+
+ .blog-date-seo-india {
+     color: var(--primary-color);
+     font-size: 0.9rem;
+     margin-bottom: 0.5rem;
+ }
+
+ .blog-title-seo-india {
+     font-size: 1.2rem;
+     margin-bottom: 1rem;
+     color: var(--text-color);
+ }
+
+ .blog-excerpt-seo-india {
+     color: #666;
+     font-size: 0.95rem;
+     margin-bottom: 1.5rem;
+     line-height: 1.6;
+ }
+
+ .read-more-seo-india {
+     color: var(--primary-color);
+     text-decoration: none;
+     font-weight: 600;
+     display: inline-flex;
+     align-items: center;
+     gap: 0.5rem;
+ }
+
+ .read-more-seo-india:hover {
+     color: var(--secondary-color);
+ }
+
+ .read-more-seo-india i {
+     transition: transform 0.3s ease;
+ }
+
+ .read-more-seo-india:hover i {
+     transform: translateX(5px);
+ }
+
+ @media (max-width: 768px) {
+     .blog-section-seo-india {
+         padding: 3rem 15px;
+     }
+
+     .blog-grid-seo-india {
+         grid-template-columns: 1fr;
+     }
+
+     .blog-image-seo-india {
+         height: 180px;
+     }
+ }
