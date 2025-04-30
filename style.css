@@ -42,13 +42,7 @@
  }
 
 
-@media (max-width: 768px) { /* For screens smaller than 768px (mobile) */
-    .header-header {
-        background-attachment: scroll !important; /* Change fixed to scroll */
-        background-size: cover !important; /* Ensure the image still covers */
-        background-position: center !important; /* Center the image */
-    }
-}
+
 
  .header-content {
      display: flex;
@@ -534,6 +528,22 @@
          transform: translateY(0);
      }
  }
+
+@media (max-width: 768px) { /* For screens smaller than 768px (mobile) */
+    .stats-section-seo-india {
+        background-attachment: scroll; /* Change fixed to scroll for mobile */
+        background-size: cover; /* Ensure the image still covers */
+        background-position: center; /* Center the image */
+    }
+}
+
+@media (max-width: 768px) { /* For screens smaller than 768px (mobile) */
+    .header-header {
+        background-attachment: scroll !important; /* Change fixed to scroll */
+        background-size: cover !important; /* Ensure the image still covers */
+        background-position: center !important; /* Center the image */
+    }
+}
 
  @media (max-width: 768px) {
      h1 {
